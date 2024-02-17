@@ -15,6 +15,26 @@ public class copy_paste extends driver{
     driver.get(url);
     
     Actions action = new Actions(driver);
+	WebElement firstname = driver.findElement(By.xpath("//input[@id='firstName']"));
+	firstname.sendKeys("Saima");
+	Thread.sleep(2000);
+	//Select all
+	action.keyDown(Keys.CONTROL).sendKeys("A").keyUp(Keys.CONTROL).build().perform();
+	//copy
+	action.keyDown(Keys.CONTROL).sendKeys("C").keyUp(Keys.CONTROL).build().perform();
+	//Tab
+	firstname.sendKeys(Keys.TAB);
+	action.build().perform();
+	
+	WebElement lastname = driver.findElement(By.xpath("//input[@id='lastName']"));
+	
+	//paste
+	action.keyDown(Keys.CONTROL).sendKeys("V").keyUp(Keys.CONTROL).build().perform();
+	Thread.sleep(5000);
+    
+    
+    
+    /*Actions action = new Actions(driver);
 		
 	WebElement firstname = driver.findElement(By.xpath("//input[@id='firstName']"));
 	firstname.sendKeys("Saima");
@@ -40,6 +60,6 @@ public class copy_paste extends driver{
 	action.sendKeys("V");
 	action.keyUp(Keys.CONTROL);
 	action.build().perform();
-	Thread.sleep(5000);
+	Thread.sleep(5000);*/
      }
 }

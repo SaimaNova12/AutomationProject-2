@@ -2,11 +2,12 @@ package SaimaNova.AutomationProject_2;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.testng.annotations.Test;
 
 public class BrowserCommands extends driver{
        
 	String url = "https://www.daraz.com.bd/";
-	
+	@Test
     public void browsercommands() throws InterruptedException {
 		driver.manage().window().maximize();
 		driver.get(url);

@@ -13,7 +13,7 @@ public class WebElementCommands extends driver{
 		driver.get(url);
 		
 		//sendKeys
-		/*WebElement firstname = driver.findElement(By.xpath("//input[@id='firstName']"));
+		WebElement firstname = driver.findElement(By.xpath("//input[@id='firstName']"));
 		firstname.sendKeys("Saima");
 		Thread.sleep(2000);
 		WebElement lastname = driver.findElement(By.xpath("//input[@id='lastName']"));
@@ -23,7 +23,8 @@ public class WebElementCommands extends driver{
 		WebElement dob = driver.findElement(By.xpath("//input[@id='dateOfBirthInput']"));
 		dob.clear();
 		dob.click();
-		Thread.sleep(2000);*/
+		Thread.sleep(2000);
+		
 		//Get attribute Command
 		WebElement email = driver.findElement(By.xpath("//input[@id='userEmail']"));
 		//System.out.println(email.getAttribute("placeholder"));
@@ -44,6 +45,7 @@ public class WebElementCommands extends driver{
 		else {
 			System.out.println("No Locators is Found");
 		}
+		
 	    WebElement sports = driver.findElement(By.xpath("//label[contains(text(),'Sports')]"));
 	    if(!sports.isSelected()) {
 	    	sports.click();

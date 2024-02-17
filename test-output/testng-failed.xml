@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="SaimaNova.AutomationProject_2.copy_paste">
+      <class name="SaimaNova.AutomationProject_2.HandlingFrames">
         <methods>
-          <include name="cp"/>
+          <include name="handlingframes"/>
           <include name="close"/>
           <include name="start"/>
         </methods>
-      </class> <!-- SaimaNova.AutomationProject_2.copy_paste -->
+      </class> <!-- SaimaNova.AutomationProject_2.HandlingFrames -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

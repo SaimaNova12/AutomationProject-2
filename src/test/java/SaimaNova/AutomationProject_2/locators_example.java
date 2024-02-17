@@ -16,7 +16,7 @@ public class locators_example extends driver{
 		bus.click();
 		Thread.sleep(5000);
 		
-		//By name
+		//By attribute name
 		WebElement bus1 = driver.findElement(By.name("purpose"));
 		bus1.click();
 		Thread.sleep(5000);

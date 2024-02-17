@@ -16,7 +16,7 @@ public class SelectMethod_dropdown extends driver{
     	//select[@id='searchDropdownBox']
     	WebElement menu = driver.findElement(By.xpath("//select[@id='searchDropdownBox']"));
     	Select select = new Select(menu);
-    	
+    	Thread.sleep(3000);
     	//SelectByIndex
     	select.selectByIndex(5);
     	Thread.sleep(3000);
